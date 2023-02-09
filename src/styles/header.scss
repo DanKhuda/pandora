@@ -1,0 +1,78 @@
+.header {
+  border-bottom: 5px solid $pink;
+
+  &__logo {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: rem(18) 0;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button:last-child {
+    margin-right: rem(20);
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    padding: rem(10);
+  }
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid $grey;
+
+  &__container {
+    display: flex;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    width: rem(241);
+    height: rem(41);
+    letter-spacing: 0.155em;
+    font-size: rem(12);
+  }
+}
+
+.button-desktop {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  &__button {
+    border: none;
+    background: none;
+    align-items: center;
+    height: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: block;
+    height: 100%;
+  }
+}

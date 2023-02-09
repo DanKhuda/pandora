@@ -1,0 +1,14 @@
+$font-family-base: ("Pan Display");
+$body-font-size: 16;
+
+@font-face {
+  font-family: "Pan Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/pan_display.eot");
+  src: local("IBM Plex Sans"), local("IBMPlexSans"),
+    url("../fonts/pan_display.woff2") format("woff2"),
+    url("../fonts/pan_display.woff") format("woff"),
+    url("../fonts/pan_display.ttf") format("truetype"),
+    url("../fonts/pan_display.svg") format("svg");
+}

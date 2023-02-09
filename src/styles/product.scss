@@ -1,0 +1,92 @@
+.product {
+  font-family: $font-family-base;
+
+  &__images {
+    margin: rem(30) 0;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: rem(30);
+  }
+
+  &__info {
+    margin: rem(50) rem(41);
+
+    @include media-breakpoint-down(md) {
+      margin: 0 rem(15);
+    }
+  }
+
+  &__first-title {
+    font-size: rem(14);
+    text-align: center;
+    color: $lite-grey;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: rem(28);
+    font-weight: 700;
+    line-height: rem(32);
+    padding: rem(10) 0 rem(20) 0;
+  }
+
+  &__text {
+    color: $black;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(18);
+    letter-spacing: 0.017em;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: rem(12);
+  line-height: rem(18);
+  letter-spacing: 0.003em;
+
+  &__old {
+    text-decoration: line-through;
+    margin-right: 1rem;
+    color: $black;
+  }
+
+  &__actual {
+    color: $red;
+  }
+}
+
+.feedback {
+  &__content {
+    position: fixed;
+    right: rem(0);
+    top: 50%;
+  }
+
+  &__text {
+    background: $white;
+    padding: rem(11) rem(21);
+    border: 1px solid $border-grey;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(17);
+    letter-spacing: 0.155em;
+    transform: rotate(90deg);
+    translate: rem(45);
+    text-transform: uppercase;
+  }
+}
